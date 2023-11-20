@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- <%@page import="com.example.dao.BoardDAO, com.example.bean.BoardVO"%>
+ <%@page import="com.example.dao.TFDAO, com.example.bean.TFVO"%>
+<%@ page import="com.example.dao.TFDAO" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,9 +11,9 @@
 <body>
 
 <%
-	BoardDAO boardDAO = new BoardDAO();
+	TFDAO TFDAO = new TFDAO();
 	String id=request.getParameter("id");	
-	BoardVO u=boardDAO.getBoard(Integer.parseInt(id));
+	TFVO u= TFDAO.getBoard(Integer.parseInt(id));
 %>
 
 <h1>Edit Form</h1>
