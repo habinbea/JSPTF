@@ -13,16 +13,16 @@
 <%
 	TFDAO TFDAO = new TFDAO();
 	String id=request.getParameter("id");	
-	TFVO u= TFDAO.getBoard(Integer.parseInt(id));
+	TFVO u= TFDAO.getTF(Integer.parseInt(id));
 %>
 
 <h1>Edit Form</h1>
 <form action="editpost.jsp" method="post">
-<input type="hidden" name="seq" value="<%=u.getSeq() %>"/>
+<input type="hidden" name="seq" value="<%=u.getTFID() %>"/>
 <table>
-<tr><td>Title:</td><td><input type="text" name="title" value="<%= u.getTitle()%>"/></td></tr>
-<tr><td>Writer:</td><td><input type="text" name="writer" value="<%= u.getWriter()%>" /></td></tr>
-<tr><td>Content:</td><td><textarea cols="50" rows="5" name="content"><%= u.getContent()%></textarea></td></tr>
+<tr><td>Title:</td><td><input type="text" name="title" value="<%= u.getTFName()%>"/></td></tr>
+<tr><td>Writer:</td><td><input type="text" name="writer" value="<%= u.getTFFullName()%>" /></td></tr>
+<tr><td>Content:</td><td><textarea cols="50" rows="5" name="content"><%= u.getGeneralInformation()%></textarea></td></tr>
 <tr><td colspan="2"><input type="submit" value="Edit Post"/>
 <input type="button" value="Cancel" onclick="history.back()"/></td></tr>
 </table>

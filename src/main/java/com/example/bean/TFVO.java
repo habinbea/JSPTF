@@ -10,7 +10,6 @@ public class TFVO {
 	private String FeedbackRegulation;
 	private String Reference;
 	private Date Regdate;
-	private int cnt;
 
 	public int getTFID() {
 		return TFID;
@@ -53,11 +52,5 @@ public class TFVO {
 	}
 	public void setRegdate(Date regdate) {
 		Regdate = regdate;
-	}
-	public int getCnt() {
-		return cnt;
-	}
-	public void setCnt(int cnt) {
-		this.cnt = cnt;
 	}
 }

@@ -10,6 +10,6 @@
 
 <%
 	TFDAO TFDAO = new TFDAO();
-	int i= TFDAO.updateBoard(u);
+	int i= TFDAO.updateTF(u);
 	response.sendRedirect("posts.jsp");
 %>

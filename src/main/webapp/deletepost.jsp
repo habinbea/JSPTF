@@ -6,9 +6,9 @@
 	if (sid != ""){  
 		int id = Integer.parseInt(sid);
 		TFVO u = new TFVO();
-		u.setSeq(id);
+		u.setTFID(id);
 		TFDAO TFDAO = new TFDAO();
-		TFDAO.deleteBoard(u);
+		TFDAO.deleteTF(u);
 	}
 	response.sendRedirect("posts.jsp");
 %>

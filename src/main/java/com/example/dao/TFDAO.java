@@ -88,7 +88,6 @@ public class TFDAO {
 				one.setGeneralInformation(rs.getString("GeneralInformation"));
 				one.setFeedbackRegulation(rs.getString("FeedbackRegulation"));
 				one.setReference(rs.getString("Reference"));
-				one.setCnt(rs.getInt("cnt"));
 			}
 			rs.close();
 		} catch (Exception e) {
@@ -106,12 +105,13 @@ public class TFDAO {
 			rs = stmt.executeQuery();
 			while(rs.next()) {
 				TFVO one = new TFVO();
-				one.setSeq(rs.getInt("seq"));
-				one.setTitle(rs.getString("title"));
-				one.setWriter(rs.getString("writer"));
-				one.setContent(rs.getString("content"));
-				one.setRegdate(rs.getDate("regdate"));
-				one.setCnt(rs.getInt("cnt"));
+				one.setTFID(rs.getInt("TFID"));
+				one.setTFName(rs.getString("TFName"));
+				one.setTFFullName(rs.getString("TFFullName"));
+				one.setGeneralInformation(rs.getString("GeneralInformation"));
+				one.setFeedbackRegulation(rs.getString("FeedbackRegulation"));
+				one.setReference(rs.getString("Reference"));
+				one.setRegdate(rs.getDate("Regdate"));
 				list.add(one);
 			}
 			rs.close();

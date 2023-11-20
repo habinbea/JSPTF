@@ -39,7 +39,7 @@
 <h1>자유게시판</h1>
 <%
 	TFDAO TFDAO = new TFDAO();
-	List<TFVO> list = TFDAO.getBoardList();
+	List<TFVO> list = TFDAO.getTFList();
 	request.setAttribute("list",list);
 %>
 <table id="list" width="90%">
@@ -54,13 +54,13 @@
 </tr>
 <c:forEach items="${list}" var="u">
 	<tr>
-		<td>${u.getSeq()}</td>
-		<td>${u.getTitle()}</td>
-		<td>${u.getWriter()}</td>
-		<td>${u.getContent()}</td>
+		<td>${u.getTFID()}</td>
+		<td>${u.getTFName()}</td>
+		<td>${u.getTFFullName()}</td>
+		<td>${u.getGeneralInformation()}</td>
 		<td>${u.getRegdate()}</td>
-		<td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>
-		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
+		<td><a href="editform.jsp?id=${u.getTFID()}">Edit</a></td>
+		<td><a href="javascript:delete_ok('${u.getTFID()}')">Delete</a></td>
 	</tr>
 </c:forEach>
 </table>
