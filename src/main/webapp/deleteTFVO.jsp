@@ -5,10 +5,10 @@
 	String sid = request.getParameter("id");
 	if (sid != ""){  
 		int id = Integer.parseInt(sid);
-		TFVO u = new TFVO();
-		u.setTFID(id);
-		TFDAO TFDAO = new TFDAO();
-		TFDAO.deleteTF(u);
+		TFVO tf = new TFVO();
+		tf.setTfid(id);
+		TFDAO tfdao = new TFDAO();
+		tfdao.deleteTF(tf);
 	}
-	response.sendRedirect("posts.jsp");
+	response.sendRedirect("index.jsp");
 %>

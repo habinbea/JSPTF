@@ -1,0 +1,14 @@
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover .card,
+.card-link:focus .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.card {
+  cursor: pointer;
+}

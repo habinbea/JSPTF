@@ -15,21 +15,21 @@ public class TFDAO {
 	PreparedStatement stmt = null;
 	ResultSet rs = null;
 
-	private final String TF_INSERT = "insert into pLDLR_TF (TFName, TFFullName, GeneralInformation, FeedbackRegulation, Reference) values (?,?,?,?,?)";
-	private final String TF_UPDATE = "update pLDLR_TF set TFName=?, TFFullName=?, GeneralInformation=?, FeedbackRegulation=?, Reference=? where TFID=?";
-	private final String TF_DELETE = "delete from pLDLR_TF  where TFID=?";
-	private final String TF_GET = "select * from pLDLR_TF  where TFID=?";
-	private final String TF_LIST = "select * from pLDLR_TF order by TFID desc";
+	private final String TF_INSERT = "insert into pLDLR_TF (tfname, tffullname, generalinformation, feedbackregulation, reference) values (?,?,?,?,?)";
+	private final String TF_UPDATE = "update pLDLR_TF set tfname=?, tffullname=?, generalinformation=?, feedbackregulation=?, reference=? where tfid=?";
+	private final String TF_DELETE = "delete from pLDLR_TF  where tfid=?";
+	private final String TF_GET = "select * from pLDLR_TF  where tfid=?";
+	private final String TF_LIST = "select * from pLDLR_TF order by tfid desc";
 
 	public int insertTF(TFVO vo) {
 		System.out.println("===> JDBC로 insertTF() 기능 처리");
 		try {
 			conn = JDBCUtil.getConnection();
 			stmt = conn.prepareStatement(TF_INSERT);
-			stmt.setString(1, vo.getTFName());
-			stmt.setString(2, vo.getTFFullName());
-			stmt.setString(3, vo.getGeneralInformation());
-			stmt.setString(4, vo.getFeedbackRegulation());
+			stmt.setString(1, vo.getTfname());
+			stmt.setString(2, vo.getTffullname());
+			stmt.setString(3, vo.getGeneralinformation());
+			stmt.setString(4, vo.getFeedbackregulation());
 			stmt.setString(5, vo.getReference());
 			stmt.executeUpdate();
 			return 1;
@@ -45,7 +45,7 @@ public class TFDAO {
 		try {
 			conn = JDBCUtil.getConnection();
 			stmt = conn.prepareStatement(TF_DELETE);
-			stmt.setInt(1, vo.getTFID());
+			stmt.setInt(1, vo.getTfid());
 			stmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -56,14 +56,14 @@ public class TFDAO {
 		try {
 			conn = JDBCUtil.getConnection();
 			stmt = conn.prepareStatement(TF_UPDATE);
-			stmt.setString(1, vo.getTFName());
-			stmt.setString(2, vo.getTFFullName());
-			stmt.setString(3, vo.getGeneralInformation());
-			stmt.setString(4, vo.getFeedbackRegulation());
+			stmt.setString(1, vo.getTfname());
+			stmt.setString(2, vo.getTffullname());
+			stmt.setString(3, vo.getGeneralinformation());
+			stmt.setString(4, vo.getFeedbackregulation());
 			stmt.setString(5, vo.getReference());
-			stmt.setInt(5, vo.getTFID());
+			stmt.setInt(6, vo.getTfid());
 
-			System.out.println(vo.getTFName() + "-" + vo.getTFFullName() + "-" + vo.getGeneralInformation() + "-" + vo.getFeedbackRegulation() + "-" + vo.getReference() + "-" + vo.getTFID());
+			System.out.println(vo.getTfname() + "-" + vo.getTffullname() + "-" + vo.getGeneralinformation() + "-" + vo.getFeedbackregulation() + "-" + vo.getReference() + "-" + vo.getTfid());
 			stmt.executeUpdate();
 			return 1;
 
@@ -82,11 +82,11 @@ public class TFDAO {
 			stmt.setInt(1, seq);
 			rs = stmt.executeQuery();
 			if(rs.next()) {
-				one.setTFID(rs.getInt("TFID"));
-				one.setTFName(rs.getString("TFName"));
-				one.setTFFullName(rs.getString("TFFullName"));
-				one.setGeneralInformation(rs.getString("GeneralInformation"));
-				one.setFeedbackRegulation(rs.getString("FeedbackRegulation"));
+				one.setTfid(rs.getInt("TFID"));
+				one.setTfname(rs.getString("TFName"));
+				one.setTffullname(rs.getString("TFFullName"));
+				one.setGeneralinformation(rs.getString("generalinformation"));
+				one.setFeedbackregulation(rs.getString("FeedbackRegulation"));
 				one.setReference(rs.getString("Reference"));
 			}
 			rs.close();
@@ -105,11 +105,11 @@ public class TFDAO {
 			rs = stmt.executeQuery();
 			while(rs.next()) {
 				TFVO one = new TFVO();
-				one.setTFID(rs.getInt("TFID"));
-				one.setTFName(rs.getString("TFName"));
-				one.setTFFullName(rs.getString("TFFullName"));
-				one.setGeneralInformation(rs.getString("GeneralInformation"));
-				one.setFeedbackRegulation(rs.getString("FeedbackRegulation"));
+				one.setTfid(rs.getInt("TFID"));
+				one.setTfname(rs.getString("TFName"));
+				one.setTffullname(rs.getString("TFFullName"));
+				one.setGeneralinformation(rs.getString("generalinformation"));
+				one.setFeedbackregulation(rs.getString("FeedbackRegulation"));
 				one.setReference(rs.getString("Reference"));
 				one.setRegdate(rs.getDate("Regdate"));
 				list.add(one);

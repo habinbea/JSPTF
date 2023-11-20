@@ -4,17 +4,17 @@
 
 <% request.setCharacterEncoding("utf-8"); %>
 
-<jsp:useBean id="u" class="com.example.bean.TFVO" />
-<jsp:setProperty property="*" name="u"/>
+<jsp:useBean id="tf" class="com.example.bean.TFVO" />
+<jsp:setProperty property="*" name="tf"/>
 
 <%
-	TFDAO TFDAO = new TFDAO();
-	int i = TFDAO.insertTF(u);
+	TFDAO tfdao = new TFDAO();
+	int i = tfdao.insertTF(tf);
 	String msg = "데이터 추가 성공 !";
 	if(i == 0) msg = "[에러] 데이터 추가 ";
 %>
 
 <script>
 	alert('<%=msg%>');
-	location.href='posts.jsp';
+	location.href='index.jsp';
 </script>

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="com.example.dao.TFDAO, com.example.bean.TFVO,java.util.*"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+ <%@page import="com.example.dao.TFDAO, com.example.bean.TFVO"%>
+<%@ page import="com.example.dao.TFDAO" %>
 <!DOCTYPE html>
 <!-- saved from url=(0049)https://getbootstrap.com/docs/5.3/examples/album/ -->
 <html lang="en" data-bs-theme="light">
@@ -16,7 +16,7 @@
 			content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
 	/>
 	<meta name="generator" content="Hugo 0.118.2" />
-	<title>posts</title>
+	<title>add</title>
 	<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -283,7 +283,19 @@
 	<div class="navbar navbar-dark bg-dark shadow-sm">
 		<div class="container">
 			<a href="index.html" class="navbar-brand d-flex align-items-center">
-				<img src="images/DNA.png" alt="DNA logo" width="10%" />
+				<svg width="10%" viewBox="0 0 256 193" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_47_6)">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M-0.5 -0.5C84.8333 -0.5 170.167 -0.5 255.5 -0.5C255.5 63.8333 255.5 128.167 255.5 192.5C170.167 192.5 84.8333 192.5 -0.5 192.5C-0.5 128.167 -0.5 63.8333 -0.5 -0.5Z" fill="#212529"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4999 80.5C37.2171 79.7109 36.7171 79.0442 35.9999 78.5C35.1711 97.0046 35.3378 115.338 36.4999 133.5C42.9257 133.748 48.9257 132.248 54.4999 129C55.293 125.589 55.793 122.089 55.9999 118.5C59.7872 123.956 63.9539 129.123 68.4999 134C59.1253 142.268 48.1253 146.435 35.4999 146.5C31.4446 146.425 27.4446 145.925 23.4999 145C17.7475 141.819 17.0808 137.819 21.4999 133C22.7931 132.51 24.1265 132.343 25.4999 132.5C26.2089 133.404 27.2089 133.737 28.4999 133.5C28.8305 111.993 28.4972 90.6601 27.4999 69.5C24.8291 67.0659 21.9957 64.7326 18.9999 62.5C17.31 57.5422 18.9767 54.5422 23.9999 53.5C27.4877 54.3273 30.6543 55.8273 33.4999 58C37.3332 61.8333 41.1666 65.6667 44.9999 69.5C54.0616 82.8994 62.7282 96.5661 70.9999 110.5C77.3855 119.56 85.5522 126.393 95.4999 131C99.9625 132.975 104.629 133.808 109.5 133.5C109.667 114.164 109.5 94.8305 109 75.5C101.667 84.8241 95.3338 94.8241 89.9999 105.5C89.6666 111.167 89.3332 116.833 88.9999 122.5C83.3125 118.313 78.4792 113.313 74.4999 107.5C81.7369 94.1063 89.5703 81.1063 97.9999 68.5C118.515 46.0007 142.682 41.1673 170.5 54C178.962 60.1278 186.462 67.2945 193 75.5C201.084 88.6697 209.417 101.67 218 114.5C218.5 96.1697 218.667 77.8364 218.5 59.5C211.632 59.1336 205.299 60.8003 199.5 64.5C198.675 68.1224 198.175 71.789 198 75.5C194.024 70.0234 189.858 64.6901 185.5 59.5C199.188 47.6638 214.855 44.1638 232.5 49C236.5 52.6667 236.5 56.3333 232.5 60C230.19 60.4966 227.857 60.6633 225.5 60.5C225.333 81.5026 225.5 102.503 226 123.5C229 125.833 232 128.167 235 130.5C236.552 136.073 234.552 139.406 229 140.5C220.821 135.905 213.821 129.905 208 122.5C199.166 109.503 190.833 96.1697 183 82.5C173.637 68.9458 160.804 61.6125 144.5 60.5C144.333 79.5029 144.5 98.5029 145 117.5C148.147 114.532 150.814 111.198 153 107.5C156.414 101.003 160.081 94.6697 164 88.5C164.17 82.8042 164.67 77.1376 165.5 71.5C171.37 75.2027 176.037 80.036 179.5 86C171.956 101.699 162.623 116.199 151.5 129.5C130.324 148.872 106.99 151.706 81.4999 138C74.0398 132.874 67.5398 126.707 61.9999 119.5C53.8224 106.472 45.6557 93.4719 37.4999 80.5Z" fill="#F9F9FA"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M132.5 60.5C133.833 60.5 135.167 60.5 136.5 60.5C136.5 82.5 136.5 104.5 136.5 126.5C130.719 130.2 124.386 132.534 117.5 133.5C117.167 111.157 117.5 88.8234 118.5 66.5C122.758 63.5257 127.425 61.5257 132.5 60.5Z" fill="#212529"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4999 80.5C36.5032 97.9921 36.1698 115.659 36.4999 133.5C35.3378 115.338 35.1711 97.0046 35.9999 78.5C36.7171 79.0442 37.2171 79.7109 37.4999 80.5Z" fill="#373B3F"/>
+					</g>
+					<defs>
+						<clipPath id="clip0_47_6">
+							<rect width="256" height="193" fill="white"/>
+						</clipPath>
+					</defs>
+				</svg>
 
 				<strong>TF</strong>
 			</a>
@@ -302,21 +314,44 @@
 	</div>
 </header>
 
-<%
-	TFDAO TFDAO = new TFDAO();
-	List<TFVO> list = TFDAO.getTFList();
-	request.setAttribute("list",list);
-%>
 <main>
 	<section class="py-5 text-center container">
 		<div class="row py-lg-5">
 			<div class="col-lg-6 col-md-8 mx-auto">
-				<h1 class="fw-light">TFs that bind to pLDLR</h1>
-				<p class="lead text-body-secondary">
-					A list of transcription factors that bind to the LDLR promoter
-				</p>
+				<input
+						type="text"
+						class="form-control form-control-lg mb-3"
+						id="TF_name"
+						placeholder="TF name"
+						value="SREBF1/2"
+				/>
+				<input
+						type="text"
+						class="form-control form-control-sm mb-3"
+						id="TF_fullname"
+						placeholder="TF full name"
+						value="Sterol regulatory element-binding protein 1/2"
+				/>
+				<div class="mb-3">
+					<div class="text-start">
+						<label for="formFileSm" class="form-label"
+						>Image file of TF motif for thumbnail</label
+						>
+					</div>
+
+					<input
+							class="form-control form-control-sm"
+							id="formFileSm"
+							type="file"
+					/>
+				</div>
 				<p>
-					<a href="add.html" class="btn btn-outline-dark">Add a TF</a>
+					<a
+							href="view.jsp"
+							onclick="edit_confirm()"
+							class="btn btn-outline-dark"
+					>Edit</a
+					>
 				</p>
 			</div>
 		</div>
@@ -324,22 +359,54 @@
 
 	<div class="album py-5 bg-body-tertiary">
 		<div class="container">
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-				<c:forEach items="${list}" var="tf">
-					<div class="col">
-						<a href="view.html" class="card-link">
-							<div class="card shadow-sm">
-								<img src="images/${tf.imageFileName}" alt="${tf.imageAltText}" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
-								<div class="card-body">
-									<p class="card-text">${tf.getTFName()}</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<small class="text-body-secondary">${tf.getTFFullName()}</small>
-									</div>
-								</div>
+			<div class="row g-3">
+				<div class="col-12">
+					<div class="card shadow-sm mx-auto">
+						<div class="card-body">
+							<p class="card-text">General Information</p>
+							<div
+									class="d-flex justify-content-between align-items-center mb-3"
+							>
+                    <textarea
+							class="form-control form-control-sm"
+							id="general_info"
+							rows="4"
+					>
+SREBF1/2 is an activator that regulates transcription of:
+- cholesterol biosynthetic pathway genes (HMG CoA reductase, HMG CoA synthase, farnesyl diphosphate synthase, squalene synthase),
+- cholesterol uptake gene (LDL receptor), and
+- fatty acid synthesis and uptake pathway genes (acetyl CoA carboxylase, fatty acid synthase, stearoyl CoA desaturase-1, and lipoprotein lipase)</textarea
+					>
 							</div>
-						</a>
+							<p class="card-text">Feedback regulation</p>
+							<div
+									class="d-flex justify-content-between align-items-center mb-3"
+							>
+                    <textarea
+							class="form-control form-control-sm"
+							id="references"
+							rows="4"
+					>
+When intracellular sterol is low, SREBF is cleaved from ER and nuclear membranes and migrate into the nucleus to bind to the promoter of LDLR.
+The cell takes up LDL via LDLR, and degrades it into phospholipids, triglycerides, and cholesterol.
+When cholesterol levels increase, SREBF is no longer cleaved.</textarea
+					>
+							</div>
+							<p class="card-text">References</p>
+							<div
+									class="d-flex justify-content-between align-items-center"
+							>
+                    <textarea
+							class="form-control form-control-sm"
+							name="reference"
+							rows="4"
+					>
+1. Brown, M. S., & Goldstein, J. L. (1997). The SREBP pathway: regulation of cholesterol metabolism by proteolysis of a membrane-bound transcription factor. Cell, 89(3), 331–340. https://doi.org/10.1016/s0092-8674(00)80213-5</textarea
+					>
+							</div>
+						</div>
 					</div>
-				</c:forEach>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -368,5 +435,6 @@
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"
 ></script>
+<script src="my.js"></script>
 </body>
 </html>

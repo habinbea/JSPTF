@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
-<%@page import="com.example.dao.TFDAO, com.example.bean.TFVO,java.util.*"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!-- saved from url=(0049)https://getbootstrap.com/docs/5.3/examples/album/ -->
 <html lang="en" data-bs-theme="light">
@@ -16,7 +14,7 @@
             content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.118.2" />
-    <title>index</title>
+    <title>add</title>
     <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -314,21 +312,38 @@
     </div>
 </header>
 
-<%
-    TFDAO tfdao = new TFDAO();
-    List<TFVO> list = tfdao.getTFList();
-    request.setAttribute("list",list);
-%>
 <main>
+    <form action="addTFVO.jsp" method="post">
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">TFs that bind to pLDLR</h1>
-                <p class="lead text-body-secondary">
-                    A list of transcription factors that bind to the LDLR promoter
-                </p>
+                <input
+                        type="text"
+                        class="form-control form-control-lg mb-3"
+                        name="tfname"
+                        placeholder="TF name"
+                />
+                <input
+                        type="text"
+                        class="form-control form-control-sm mb-3"
+                        name="tffullname"
+                        placeholder="TF full name"
+                />
+                <!--<div class="mb-3">
+                    <div class="text-start">
+                        <label for="formFileSm" class="form-label"
+                        >Image file of TF motif for thumbnail</label
+                        >
+                    </div>
+
+                    <input
+                            class="form-control form-control-sm"
+                            id="formFileSm"
+                            type="file"
+                    />
+                </div>-->
                 <p>
-                    <a href="add.jsp" class="btn btn-outline-dark">Add a TF</a>
+                    <input type="submit" value="Add" onclick="add_confirm()" class="btn btn-outline-dark"/>
                 </p>
             </div>
         </div>
@@ -336,25 +351,47 @@
 
     <div class="album py-5 bg-body-tertiary">
         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <c:forEach items="${list}" var="tf">
-                    <div class="col">
-                        <a href="view.jsp?id=${tf.tfid}" class="card-link">
-                            <div class="card shadow-sm">
-                                <img src="images/{tf.TFMotifImage}" alt="{tf.TFMotifImage}" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
-                                <div class="card-body">
-                                    <p class="card-text">${tf.tfname}</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <small class="text-body-secondary">${tf.tffullname}</small>
-                                    </div>
-                                </div>
+            <div class="row g-3">
+                <div class="col-12">
+                    <div class="card shadow-sm mx-auto">
+                        <div class="card-body">
+                            <p class="card-text">General Information</p>
+                            <div
+                                    class="d-flex justify-content-between align-items-center mb-3"
+                            >
+                    <textarea
+                            class="form-control"
+                            name="generalinformation"
+                            rows="3"
+                    ></textarea>
                             </div>
-                        </a>
+                            <p class="card-text">Feedback regulation</p>
+                            <div
+                                    class="d-flex justify-content-between align-items-center mb-3"
+                            >
+                    <textarea
+                            class="form-control"
+                            name="feedbackregulation"
+                            rows="3"
+                    ></textarea>
+                            </div>
+                            <p class="card-text">References</p>
+                            <div
+                                    class="d-flex justify-content-between align-items-center mb-3"
+                            >
+                    <textarea
+                            class="form-control"
+                            name="reference"
+                            rows="3"
+                    ></textarea>
+                            </div>
+                        </div>
                     </div>
-                </c:forEach>
+                </div>
             </div>
         </div>
     </div>
+    </form>
 </main>
 
 <footer class="text-body-secondary py-4">
@@ -380,5 +417,6 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"
 ></script>
+<script src="my.js"></script>
 </body>
 </html>

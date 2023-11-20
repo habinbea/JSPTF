@@ -3,54 +3,51 @@ package com.example.bean;
 import java.util.Date;
 
 public class TFVO {
-	private int TFID;
-	private String TFName;
-	private String TFFullName;
-	private String GeneralInformation;
-	private String FeedbackRegulation;
-	private String Reference;
-	private Date Regdate;
+	private int tfid;
+	private String tfname;
+	private String tffullname;
 
-	public int getTFID() {
-		return TFID;
+	private String generalinformation;
+	private String feedbackregulation;
+	private String reference;
+	private Date regdate;
+
+	public int getTfid() { return tfid;	}
+	public void setTfid(int tfid) {
+		this.tfid = tfid;
 	}
-	public void setTFID(int TFID) {
-		this.TFID = TFID;
+	public String getTfname() {
+		return tfname;
 	}
-	public String getTFName() {
-		return TFName;
+	public void setTfname(String tfname) {
+		this.tfname = tfname;
 	}
-	public void setTFName(String TFName) {
-		this.TFName = TFName;
+	public String getTffullname() {
+		return tffullname;
 	}
-	public String getTFFullName() {
-		return TFFullName;
+	public void setTffullname(String tffullname) {
+		this.tffullname = tffullname;
 	}
-	public void setTFFullName(String TFFullName) {
-		this.TFFullName = TFFullName;
+	public String getGeneralinformation() {
+		return generalinformation;
 	}
-	public String getGeneralInformation() {
-		return GeneralInformation;
+	public void setGeneralinformation(String GeneralInformation) { this.generalinformation = GeneralInformation; }
+	public String getFeedbackregulation() {
+		return feedbackregulation;
 	}
-	public void setGeneralInformation(String generalInformation) {
-		GeneralInformation = generalInformation;
-	}
-	public String getFeedbackRegulation() {
-		return FeedbackRegulation;
-	}
-	public void setFeedbackRegulation(String feedbackRegulation) {
-		FeedbackRegulation = feedbackRegulation;
+	public void setFeedbackregulation(String FeedbackRegulation) {
+		this.feedbackregulation = FeedbackRegulation;
 	}
 	public String getReference() {
-		return Reference;
+		return reference;
 	}
-	public void setReference(String reference) {
-		Reference = reference;
+	public void setReference(String Reference) {
+		this.reference = Reference;
 	}
 	public Date getRegdate() {
-		return Regdate;
+		return regdate;
 	}
-	public void setRegdate(Date regdate) {
-		Regdate = regdate;
+	public void setRegdate(Date Regdate) {
+		this.regdate = Regdate;
 	}
 }

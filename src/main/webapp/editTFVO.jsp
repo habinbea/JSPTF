@@ -5,11 +5,11 @@
 
 <% request.setCharacterEncoding("utf-8"); %>
 
-<jsp:useBean id="u" class="com.example.bean.TFVO" />
-<jsp:setProperty property="*" name="u"/>
+<jsp:useBean id="tf" class="com.example.bean.TFVO" />
+<jsp:setProperty property="*" name="tf"/>
 
 <%
-	TFDAO TFDAO = new TFDAO();
-	int i= TFDAO.updateTF(u);
-	response.sendRedirect("posts.jsp");
+	TFDAO tfdao = new TFDAO();
+	int i= tfdao.updateTF(tf);
+	response.sendRedirect("index.jsp");
 %>

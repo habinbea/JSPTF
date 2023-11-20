@@ -9,9 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa614bb4-d594-4017-a115-26a8cc5d4dd8" name="Changes" comment="a minimal working code with my data + tutorial jsp">
+    <list default="true" id="fa614bb4-d594-4017-a115-26a8cc5d4dd8" name="Changes" comment="intermediate changes to posts.jsp">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Album example · Bootstrap v5.3_files/bootstrap.bundle.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Album example · Bootstrap v5.3_files/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Album example · Bootstrap v5.3_files/color-modes.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Album example · Bootstrap v5.3_files/css@3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/my.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/my.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/posts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/posts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bean/TFVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bean/TFVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/TFDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/TFDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addTFVO.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addpostform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/deletepost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/deleteTFVO.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editTFVO.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/posts.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -56,6 +72,9 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;sql.rename.search.for.storage.occurrences&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -124,7 +143,12 @@
       <updated>1700443653746</updated>
       <workItem from="1700443654776" duration="4121000" />
       <workItem from="1700451023966" duration="1487000" />
-      <workItem from="1700452754292" duration="94000" />
+      <workItem from="1700452754292" duration="117000" />
+      <workItem from="1700453552411" duration="2133000" />
+      <workItem from="1700458105765" duration="591000" />
+      <workItem from="1700459184096" duration="4144000" />
+      <workItem from="1700463655129" duration="3961000" />
+      <workItem from="1700471996467" duration="5086000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -190,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700451634579</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="intermediate changes to posts.jsp">
+      <option name="closed" value="true" />
+      <created>1700452868070</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700452868070</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +234,7 @@
     <MESSAGE value="success run of tutorial" />
     <MESSAGE value="intermediate changes" />
     <MESSAGE value="a minimal working code with my data + tutorial jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="a minimal working code with my data + tutorial jsp" />
+    <MESSAGE value="intermediate changes to posts.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="intermediate changes to posts.jsp" />
   </component>
 </project>
