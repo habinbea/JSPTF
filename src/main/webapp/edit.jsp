@@ -353,7 +353,7 @@
 					/>
 				</div>
 				<p>
-					<input type="submit" value="Edit" onclick="edit_confirm()" class="btn btn-outline-dark"/>
+					<input type="submit" value="Edit" onclick="edit_confirm()" class="btn btn-outline-dark"  style="width: 5.5rem;" />
 				</p>
 			</div>
 		</div>
@@ -430,6 +430,5 @@
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"
 ></script>
-<script src="my.js"></script>
 </body>
 </html>

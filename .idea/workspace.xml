@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="JSPTF:war exploded" />
+      <artifact name="JSPTF:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa614bb4-d594-4017-a115-26a8cc5d4dd8" name="Changes" comment="finished add.jsp">
+    <list default="true" id="fa614bb4-d594-4017-a115-26a8cc5d4dd8" name="Changes" comment="finished edit.jsp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/TFDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/TFDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/deleteTFVO.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/deleteTFVO.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addTFVO.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addTFVO.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/my.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editTFVO.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editTFVO.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/my.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/my.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/my.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +159,8 @@
       <workItem from="1700458105765" duration="591000" />
       <workItem from="1700459184096" duration="4144000" />
       <workItem from="1700463655129" duration="3961000" />
-      <workItem from="1700471996467" duration="10517000" />
+      <workItem from="1700471996467" duration="10820000" />
+      <workItem from="1700488957532" duration="5098000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -237,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700477209993</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="finished edit.jsp">
+      <option name="closed" value="true" />
+      <created>1700482643651</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700482643651</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +264,7 @@
     <MESSAGE value="a minimal working code with my data + tutorial jsp" />
     <MESSAGE value="intermediate changes to posts.jsp" />
     <MESSAGE value="finished add.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished add.jsp" />
+    <MESSAGE value="finished edit.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished edit.jsp" />
   </component>
 </project>

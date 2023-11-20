@@ -22,7 +22,6 @@ public class TFDAO {
 	private final String TF_LIST = "select * from pLDLR_TF order by tfid desc";
 
 	public int insertTF(TFVO vo) {
-		System.out.println("===> JDBC로 insertTF() 기능 처리");
 		try {
 			conn = JDBCUtil.getConnection();
 			stmt = conn.prepareStatement(TF_INSERT);
@@ -41,7 +40,6 @@ public class TFDAO {
 
 	// 글 삭제
 	public void deleteTF(TFVO vo) {
-		System.out.println("===> JDBC로 deleteTF() 기능 처리");
 		try {
 			conn = JDBCUtil.getConnection();
 			stmt = conn.prepareStatement(TF_DELETE);
@@ -52,7 +50,6 @@ public class TFDAO {
 		}
 	}
 	public int updateTF(TFVO vo) {
-		System.out.println("===> JDBC로 updateTF() 기능 처리");
 		try {
 			conn = JDBCUtil.getConnection();
 			stmt = conn.prepareStatement(TF_UPDATE);
@@ -62,11 +59,8 @@ public class TFDAO {
 			stmt.setString(4, vo.getFeedbackregulation());
 			stmt.setString(5, vo.getReference());
 			stmt.setInt(6, vo.getTfid());
-
-			System.out.println(vo.getTfname() + "-" + vo.getTffullname() + "-" + vo.getGeneralinformation() + "-" + vo.getFeedbackregulation() + "-" + vo.getReference() + "-" + vo.getTfid());
 			stmt.executeUpdate();
 			return 1;
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -75,7 +69,6 @@ public class TFDAO {
 
 	public TFVO getTF(int seq) {
 		TFVO one = new TFVO();
-		System.out.println("===> JDBC로 getTF() 기능 처리");
 		try {
 			conn = JDBCUtil.getConnection();
 			stmt = conn.prepareStatement(TF_GET);
@@ -98,7 +91,6 @@ public class TFDAO {
 
 	public List<TFVO> getTFList(){
 		List<TFVO> list = new ArrayList<TFVO>();
-		System.out.println("===> JDBC로 getTFList() 기능 처리");
 		try {
 			conn = JDBCUtil.getConnection();
 			stmt = conn.prepareStatement(TF_LIST);

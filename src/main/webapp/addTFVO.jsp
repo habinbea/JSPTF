@@ -10,8 +10,8 @@
 <%
 	TFDAO tfdao = new TFDAO();
 	int i = tfdao.insertTF(tf);
-	String msg = "데이터 추가 성공 !";
-	if(i == 0) msg = "[에러] 데이터 추가 ";
+	String msg = "Successfully added a TF";
+	if(i == 0) msg = "Required: TF name and TF full name";
 %>
 
 <script>

@@ -328,7 +328,7 @@
                     A list of transcription factors that bind to the LDLR promoter
                 </p>
                 <p>
-                    <a href="add.jsp" class="btn btn-outline-dark">Add a TF</a>
+                    <a href="add.jsp" class="btn btn-outline-dark" style="width: 5.5rem;">Add a TF</a>
                 </p>
             </div>
         </div>

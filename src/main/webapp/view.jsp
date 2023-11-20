@@ -154,6 +154,12 @@
       display: block !important;
     }
   </style>
+  <script>
+    function delete_confirm(id) {
+      var a = confirm("Are you sure you want to delete this TF?");
+      if(a) location.href='deleteTFVO.jsp?id=' + id;
+    }
+  </script>
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -328,8 +334,8 @@
           <%= tf.getTffullname() %>
         </p>
         <p>
-          <a href="edit.jsp?id=<%= tf.getTfid() %>" class="btn btn-outline-dark">Edit</a>
-          <a href="javascript:delete_confirm(<%= tf.getTfid() %>)" class="btn btn-outline-dark">Delete</a>
+          <a href="edit.jsp?id=<%= tf.getTfid() %>" class="btn btn-outline-dark" style="width: 5.5rem;">Edit</a>
+          <a href="javascript:delete_confirm(<%= tf.getTfid() %>)" class="btn btn-outline-dark" style="width: 5.5rem;">Delete</a>
         </p>
       </div>
     </div>
@@ -343,9 +349,9 @@
             <div class="card-body">
               <p class="card-text">General Information</p>
               <div
-                      class="d-flex justify-content-between align-items-center mb-3"
+                      class="d-flex justify-content-between align-items-center mb-2"
               >
-                <small class="text-body-secondary mb-3"
+                <small class="text-body-secondary mb-0"
                 ><%= tf.getGeneralinformation() %>
                 </small>
               </div>
@@ -360,8 +366,8 @@
               <div
                       class="d-flex justify-content-between align-items-center"
               >
-                <small class="text-body-secondary">
-                  <%= tf.getReference() %>
+                <small class="text-body-secondary mb-1"
+                ><%= tf.getReference() %>
                 </small>
               </div>
             </div>
@@ -395,6 +401,5 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"
 ></script>
-<script src="my.js"></script>
 </body>
 </html>

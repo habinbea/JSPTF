@@ -11,5 +11,11 @@
 <%
 	TFDAO tfdao = new TFDAO();
 	int i= tfdao.updateTF(tf);
-	response.sendRedirect("index.jsp");
+	String msg = "Successfully edited a TF";
+	if(i == 0) msg = "Required: TF name and TF full name";
 %>
+
+<script>
+	alert('<%=msg%>');
+	location.href="view.jsp?id=${tf.tfid}";
+</script>
