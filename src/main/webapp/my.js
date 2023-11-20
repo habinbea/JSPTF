@@ -6,8 +6,10 @@ function edit_confirm() {
   }
 }
 
-function delete_confirm() {
-  alert("Are you sure you want to delete this TF?");
+function delete_confirm(id) {
+  alert("Hello, World!");
+  // var a = confirm("Are you sure you want to delete this TF?");
+  // if(a) location.href='deleteTFVO.jsp?id=' + id;
 }
 function add_confirm() {
   if (validateForm()) {
@@ -17,8 +19,8 @@ function add_confirm() {
   }
 }
 function validateForm() {
-  var TF_name = document.getElementById("tfname").value;
-  if (TF_name == "") {
+  var tfname = document.getElementById("tfname").value;
+  if (tfname == "") {
     return false;
   } else {
     return true;

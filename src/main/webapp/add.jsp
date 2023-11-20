@@ -329,7 +329,7 @@
                         name="tffullname"
                         placeholder="TF full name"
                 />
-                <!--<div class="mb-3">
+                <div class="mb-3">
                     <div class="text-start">
                         <label for="formFileSm" class="form-label"
                         >Image file of TF motif for thumbnail</label
@@ -341,7 +341,7 @@
                             id="formFileSm"
                             type="file"
                     />
-                </div>-->
+                </div>
                 <p>
                     <input type="submit" value="Add" onclick="add_confirm()" class="btn btn-outline-dark"/>
                 </p>

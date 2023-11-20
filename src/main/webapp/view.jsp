@@ -328,13 +328,8 @@
           <%= tf.getTffullname() %>
         </p>
         <p>
-          <a href="edit.jsp?id=${tf.TFID}" class="btn btn-outline-dark">Edit</a>
-          <a
-                  href="index.jsp"
-                  onclick="delete_confirm()"
-                  class="btn btn-outline-dark"
-          >Delete</a
-          >
+          <a href="edit.jsp?id=<%= tf.getTfid() %>" class="btn btn-outline-dark">Edit</a>
+          <a href="javascript:delete_confirm(<%= tf.getTfid() %>)" class="btn btn-outline-dark">Delete</a>
         </p>
       </div>
     </div>

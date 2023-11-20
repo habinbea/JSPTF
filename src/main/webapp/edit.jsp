@@ -314,23 +314,30 @@
 	</div>
 </header>
 
+<%
+	String tfid = request.getParameter("id");
+	TFDAO tfdao = new TFDAO();
+	TFVO tf = tfdao.getTF(Integer.parseInt(tfid));
+%>
 <main>
+	<form action="editTFVO.jsp" method="post">
+	<input type="hidden" name="tfid" value="<%=tf.getTfid() %>"/>
 	<section class="py-5 text-center container">
 		<div class="row py-lg-5">
 			<div class="col-lg-6 col-md-8 mx-auto">
 				<input
 						type="text"
 						class="form-control form-control-lg mb-3"
-						id="TF_name"
+						name="tfname"
 						placeholder="TF name"
-						value="SREBF1/2"
+						value="<%=tf.getTfname() %>"
 				/>
 				<input
 						type="text"
 						class="form-control form-control-sm mb-3"
-						id="TF_fullname"
+						name="tffullname"
 						placeholder="TF full name"
-						value="Sterol regulatory element-binding protein 1/2"
+						value="<%=tf.getTffullname() %>"
 				/>
 				<div class="mb-3">
 					<div class="text-start">
@@ -346,12 +353,7 @@
 					/>
 				</div>
 				<p>
-					<a
-							href="view.jsp"
-							onclick="edit_confirm()"
-							class="btn btn-outline-dark"
-					>Edit</a
-					>
+					<input type="submit" value="Edit" onclick="edit_confirm()" class="btn btn-outline-dark"/>
 				</p>
 			</div>
 		</div>
@@ -369,13 +371,9 @@
 							>
                     <textarea
 							class="form-control form-control-sm"
-							id="general_info"
+							name="generalinformation"
 							rows="4"
-					>
-SREBF1/2 is an activator that regulates transcription of:
-- cholesterol biosynthetic pathway genes (HMG CoA reductase, HMG CoA synthase, farnesyl diphosphate synthase, squalene synthase),
-- cholesterol uptake gene (LDL receptor), and
-- fatty acid synthesis and uptake pathway genes (acetyl CoA carboxylase, fatty acid synthase, stearoyl CoA desaturase-1, and lipoprotein lipase)</textarea
+					><%=tf.getGeneralinformation() %></textarea
 					>
 							</div>
 							<p class="card-text">Feedback regulation</p>
@@ -384,12 +382,9 @@ SREBF1/2 is an activator that regulates transcription of:
 							>
                     <textarea
 							class="form-control form-control-sm"
-							id="references"
+							name="feedbackregulation"
 							rows="4"
-					>
-When intracellular sterol is low, SREBF is cleaved from ER and nuclear membranes and migrate into the nucleus to bind to the promoter of LDLR.
-The cell takes up LDL via LDLR, and degrades it into phospholipids, triglycerides, and cholesterol.
-When cholesterol levels increase, SREBF is no longer cleaved.</textarea
+					><%=tf.getFeedbackregulation() %></textarea
 					>
 							</div>
 							<p class="card-text">References</p>
@@ -400,8 +395,7 @@ When cholesterol levels increase, SREBF is no longer cleaved.</textarea
 							class="form-control form-control-sm"
 							name="reference"
 							rows="4"
-					>
-1. Brown, M. S., & Goldstein, J. L. (1997). The SREBP pathway: regulation of cholesterol metabolism by proteolysis of a membrane-bound transcription factor. Cell, 89(3), 331–340. https://doi.org/10.1016/s0092-8674(00)80213-5</textarea
+					><%=tf.getReference() %></textarea
 					>
 							</div>
 						</div>
@@ -410,6 +404,7 @@ When cholesterol levels increase, SREBF is no longer cleaved.</textarea
 			</div>
 		</div>
 	</div>
+	</form>
 </main>
 
 <footer class="text-body-secondary py-4">

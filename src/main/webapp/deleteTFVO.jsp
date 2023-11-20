@@ -3,6 +3,7 @@
 <%@page import="com.example.dao.TFDAO, com.example.bean.TFVO"%>
 <%
 	String sid = request.getParameter("id");
+	System.out.println(sid);
 	if (sid != ""){  
 		int id = Integer.parseInt(sid);
 		TFVO tf = new TFVO();
