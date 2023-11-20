@@ -75,6 +75,15 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Files\Handong Global University\8th Semester\Practical Project 1\JSPTF\JSPTF\src\main\webapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Files\Handong Global University\8th Semester\Practical Project 1\JSPTF\JSPTF\src\main\java\com\example\dao" />
+      <recent name="C:\Files\Handong Global University\8th Semester\Practical Project 1\JSPTF\JSPTF\src\main\java\com\example\bean" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.821" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.821" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
