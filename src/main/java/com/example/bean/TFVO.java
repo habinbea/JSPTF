@@ -6,7 +6,7 @@ public class TFVO {
 	private int tfid;
 	private String tfname;
 	private String tffullname;
-
+	private String tfmotifimage;
 	private String generalinformation;
 	private String feedbackregulation;
 	private String reference;
@@ -28,6 +28,8 @@ public class TFVO {
 	public void setTffullname(String tffullname) {
 		this.tffullname = tffullname;
 	}
+	public String getTfmotifimage() { return tfmotifimage; }
+	public void setTfmotifimage(String tfmotifimage) { this.tfmotifimage = tfmotifimage; }
 	public String getGeneralinformation() {
 		return generalinformation;
 	}
