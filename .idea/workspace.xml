@@ -9,18 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa614bb4-d594-4017-a115-26a8cc5d4dd8" name="Changes" comment="Added fileform.jsp and fileupload.jsp to test uploading files">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/common/FileUpload.java" afterDir="false" />
+    <list default="true" id="fa614bb4-d594-4017-a115-26a8cc5d4dd8" name="Changes" comment="Completed code">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bean/TFVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bean/TFVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/TFDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/TFDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addTFVO.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addTFVO.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/deleteTFVO.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/deleteTFVO.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editTFVO.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editTFVO.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +36,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -66,6 +60,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -166,7 +161,7 @@
       <workItem from="1700488957532" duration="5920000" />
       <workItem from="1700528411899" duration="4322000" />
       <workItem from="1700533964028" duration="4502000" />
-      <workItem from="1700542827978" duration="5573000" />
+      <workItem from="1700542827978" duration="5987000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -280,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700530193835</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Completed code">
+      <option name="closed" value="true" />
+      <created>1700550471987</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700550471987</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +300,7 @@
     <MESSAGE value="finished edit.jsp" />
     <MESSAGE value="CRUD works without image" />
     <MESSAGE value="Added fileform.jsp and fileupload.jsp to test uploading files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added fileform.jsp and fileupload.jsp to test uploading files" />
+    <MESSAGE value="Completed code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed code" />
   </component>
 </project>
